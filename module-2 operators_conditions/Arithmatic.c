@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    // modulas opearation
-    int a = 10,b = 3;
-    int mod = a%b;
-    printf("%d",mod); 
+    int a,b;
+    scanf("%d %d", &a,&b);
+    printf("%d", a+b);
     return 0;
 }
