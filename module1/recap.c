@@ -6,10 +6,11 @@ int main(){
     int age,number;
     float kg;
     char name;
-    scanf("%d %d Integer value:\n ", &age,&number);
-    scanf("%f floate value: \n", &kg);
-    scanf("%c give char input: \n",&name);
-    printf(" kg: %f\n",kg);
+    printf("Int vlaue");
+    scanf("%d %d \n ", &age,&number);
+    scanf("%f  \n", &kg);
+    scanf("%c  \n",&name);
+    printf("  %f\n",kg);
     printf("Int values: %d %d \n", age,number);
     printf(" Char output: %c\n ", name);
     // access location
