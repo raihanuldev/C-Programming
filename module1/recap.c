@@ -12,4 +12,6 @@ int main(){
     printf(" kg: %f\n",kg);
     printf("Int values: %d %d \n", age,number);
     printf(" Char output: %c\n ", name);
+    // access location
+    printf("%d", &number);
 }
