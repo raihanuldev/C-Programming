@@ -13,5 +13,5 @@ int main(){
     printf("Int values: %d %d \n", age,number);
     printf(" Char output: %c\n ", name);
     // access location
-    printf("%d", &number);
+    // printf("%d", &number);
 }
