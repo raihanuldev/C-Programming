@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-int main(){
-    int CGP = 3.80;
+int main()
+{
+    float CGP = 2.80;
 
-    if(CGP >= 4.00){
-        printf("Congrat you are got A+");
+    if (CGP == 4.00)
+    {
+        printf("Congrat you are got A+ \n");
     }
-    else if (CGP >=3.50){
-        printf("You are got A");
+    else if (CGP >=3.50 && CGP <4.00){
+        printf("you got A! \n");
     }
-    else if(CGP >= 3.00){
-        printf("you are got B");
+    else if (CGP >=3.00 && CGP <3.50){
+        printf("you got A! \n");
     }
-    else{
-        printf("you are fail in my syestem");
-    }
-
+        else
+        {
+            printf("you are fail in my syestem");
+        }
 }
