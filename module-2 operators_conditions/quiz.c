@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int result = 20 > 10 && 10 < 20;
-    printf("%d", result);
+    int a = 5; //5
+    a--; //4
+    printf("%d", --a); //3
 }
