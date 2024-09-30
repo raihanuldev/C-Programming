@@ -1,12 +1,14 @@
 #include <stdio.h>
-int main()
-{
-    int x = 10;
-    int y = 12;
-    if(x>=y || x<=y)
+    int main()
     {
-        printf("hi ");
+        int x = 5;
+        if (x < 10) {
+            printf("hello ");
+        }
+        if (x == 5) {
+            printf("hi");
+        }
+        else {
+            printf("no");
+        }
     }
-  
-    printf("hello");
-}
