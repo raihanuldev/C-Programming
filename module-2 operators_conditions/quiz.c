@@ -1,10 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int a = 10;
-    int x = a++;
-    --x;
-    a--;
-    int y = --x;
-    printf("%d", y--);
+    int x = 10;
+    int y = 12;
+    if(x>=y || x<=y)
+    {
+        printf("hi");
+    }
+    else
+    {
+        printf("hello");
+    }
 }
