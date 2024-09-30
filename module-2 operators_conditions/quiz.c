@@ -5,10 +5,8 @@ int main()
     int y = 12;
     if(x>=y || x<=y)
     {
-        printf("hi");
+        printf("hi ");
     }
-    else
-    {
-        printf("hello");
-    }
+  
+    printf("hello");
 }
