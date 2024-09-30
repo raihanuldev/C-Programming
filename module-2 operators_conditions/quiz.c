@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
 {
-    double a = 15/4;
-    printf("%lf",a);
+    int result = 20 > 10 && 10 < 20;
+    printf("%d", result);
 }
