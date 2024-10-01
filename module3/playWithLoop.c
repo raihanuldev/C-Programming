@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    for(char i = 'A'; i<= 'z'; i++){
-        printf("%c\n", i);
+    int n=3;
+    int number;
+    for(int i = 1; i <= n; i++){
+        number=number+i;
     }
+    printf("%d",number);
 }
 // Aschi Code Got it
