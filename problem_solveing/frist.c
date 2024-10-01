@@ -3,8 +3,7 @@
 int main(){
     char s[500];
     // printf("enter your text: ");
-    scanf("%s", &s);
+    scanf("%[^\n]s", s);
+    printf("Hello World!\n");
     printf("%s\n", s);
 }
-
-// TODO: You need to make sure catch all words like Hello, world . 
