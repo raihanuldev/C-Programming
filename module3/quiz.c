@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int main()
-{
-    for (int j = 5; j <= 10; j++)
+ int main()
     {
-        printf("hi ");
+        int i = 0, j = 0;
+        for (j = 1; j <= 5; j++)
+        {
+            i++;
+        }
+        printf("%d", j);
     }
-}
