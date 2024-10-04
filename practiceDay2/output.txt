@@ -1,1 +1,2 @@
-Hello world444
+Welcome to jog biog home!!
+enter your frist digit: enter your operator: Enter your secound digit: --11
