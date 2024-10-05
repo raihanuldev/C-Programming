@@ -2,20 +2,17 @@
 
 int main()
 {
-    int x = 0;
-    if (x == 1)
+    int num = 5;
+    if (num > 10)
     {
-        if (x == 0)
-        {
-            printf("inside if if\n");
-        }
-        else
-        {
-            printf("inside if else\n");
-        }
+        printf("Greater than 10");
+    }
+    else if (num < 10)
+    {
+        printf("Less than 10");
     }
     else
     {
-        printf("inside else\n");
+        printf("Equal to 10");
     }
 }
