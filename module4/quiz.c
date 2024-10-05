@@ -10,7 +10,7 @@ int main()
         {
             printf("hi ");
         }
-        if (y < 10)
+        else if (y < 10)
         {
             printf("hi ");
         }
