@@ -2,17 +2,21 @@
 
 int main()
 {
-    int x = 0;
-    if (x == 1)
+    int x = 5;
+    int y = 4;
+    if (x >= y && x < y + 4)
     {
-        if (x >= 0)
+        if (y < 5)
         {
-            printf("true\n");
+            printf("hi ");
         }
-        else
+        if (y < 10)
         {
-            printf("false\n");
+            printf("hi ");
         }
     }
-    return 0;
+    else
+    {
+        printf("hello ");
+    }
 }
