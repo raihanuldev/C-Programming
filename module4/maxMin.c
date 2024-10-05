@@ -4,52 +4,27 @@ int main()
 {
     int A, B, C;
     scanf("%d %d %d", &A, &B, &C);
-    if (A < B && A < C)
+
+    int min = A;
+    // find minimam number
+    if (B < min)
     {
-        printf("%d", A);
-        if (A > B && A > C)
-        {
-            printf(" %d", A);
-        }
-        else if (B > A && B > C)
-        {
-            printf(" %d", B);
-        }
-        else if (C > A && C > B)
-        {
-            printf(" %d", C);
-        }
+        min = B;
     }
-    else if (B < A && B < C)
+    if (C < min)
     {
-        printf("%d", B);
-        if (A > B && A > C)
-        {
-            printf(" %d", A);
-        }
-        else if (B > A && B > C)
-        {
-            printf(" %d", B);
-        }
-        else if (C > A && C > B)
-        {
-            printf(" %d", C);
-        }
+        min = C;
     }
-    else if (C < A && C < B)
+
+    // maximum number
+    int max = A;
+    if (B > max)
     {
-        printf("%d", C);
-        if (A > B && A > C)
-        {
-            printf(" %d", A);
-        }
-        else if (B > A && B > C)
-        {
-            printf(" %d", B);
-        }
-        else if (C > A && C > B)
-        {
-            printf(" %d", C);
-        }
+        max = B;
     }
+    if (C > max)
+    {
+        max = C;
+    }
+    printf("%d %d\n", min, max);
 }
