@@ -1,6 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int students[10] = [1,2,3,4,6,5,7,8,9,44];
+    int students[5];
+    for(int i =0; i<5;i++){
+        scanf("%d", &students[i]);
+    }
+    // printf("%d ",students[1]);
+    for(int i =0; i<5;i++){
+        printf("%d ", students[i]);
+    }
     return 0;
 }
