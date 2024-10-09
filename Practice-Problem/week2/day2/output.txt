@@ -1,0 +1,1 @@
+Array total element 10 
