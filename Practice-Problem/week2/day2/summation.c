@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main()
 {
     int n;
     scanf("%d", &n);
     int numbers[n];
-    int sum = 0;
+    long long int sum = 0;
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &numbers[i]);
@@ -15,15 +15,7 @@ int main()
     {
         sum = sum + numbers[i];
     }
-    if (sum < 0)
-    {
-        printf("%d", sum * -1);
-    }
-    else
-    {
-
-        printf("%d", sum);
-    }
+    printf("%lld", llabs(sum));
 
     return 0;
 }
