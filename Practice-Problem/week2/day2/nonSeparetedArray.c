@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
-{
-    int n;
+{   int n;
     scanf("%d", &n);
-    int a[n]    ;
-    int sum = 0;
+    char input[n];
+    scanf("%s", input);
+    int a[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
+        a[i] =input[i]-'0';
     }
 
+
+
+    long long int sum = 0;
     for (int i = 0; i < n; i++)
     {
-        sum = sum + a[i];
+        sum += a[i];
     }
-    printf("%d\n",sum);
+    printf("%lld\n",sum);
     return 0;
 }
