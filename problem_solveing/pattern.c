@@ -1,19 +1,23 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
 
-    for(int i=1; i<=n;i+2){
-        printf("%d\n",i);
+    for (int i = 1, k=1; i <= n; i++, k+=2)
+    {
+        int space = n-i;
+        while(space--){
+            printf(" ");
+        }
+        for(int j=1; j<=k; j++){
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
-
-
-
-
-
 
 /*
    *         1
