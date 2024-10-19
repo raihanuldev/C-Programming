@@ -11,7 +11,7 @@ int main(){
     int index;
     scanf("%d",&index);
 
-    for(int i = index; i<length; i++){
+    for(int i = index; i<length -1; i++){
         a[i] = a[i+1];
     }
     length--;
