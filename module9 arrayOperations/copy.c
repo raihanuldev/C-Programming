@@ -15,12 +15,11 @@ int main()
     scanf("%d %d", &index, &value);
     length1++;
 
-    for (int i = length1 - 1; i >= index; i--)
+    for (int i = index; i<length1; i++)
     {
-        a[i + 1] = a[i];
+        a[i] + a[i+1];
     }
-    a[index] = value;
-    for (int i = 0; i < length1; i++)
+    for (int i = 0; i < length1-1; i++)
     {
         printf("%d ", a[i]);
     }
