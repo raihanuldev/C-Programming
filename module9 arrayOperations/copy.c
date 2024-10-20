@@ -10,32 +10,19 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    printf("Before Copy: \n");
-    for (int i = 0; i < length1; i++)
-    {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-    for (int i = 0; i < length1; i++)
-    {
-        printf("%d ", b[i]);
-    }
-    printf("\nAfter Copy: \n");
 
-    for (int i = 0; i < length1; i++)
+    int index, value;
+    scanf("%d %d", &index, &value);
+    length1++;
+
+    for (int i = length1 - 1; i >= index; i--)
     {
-        b[i] = a[i];
+        a[i + 1] = a[i];
     }
- a[2] = 100;
-     for (int i = 0; i < length1; i++)
+    a[index] = value;
+    for (int i = 0; i < length1; i++)
     {
         printf("%d ", a[i]);
-    }
-   
-    printf("\n");
-    for (int i = 0; i < length1; i++)
-    {
-        printf("%d ", b[i]);
     }
     return 0;
 }
