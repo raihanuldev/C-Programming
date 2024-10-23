@@ -3,44 +3,54 @@
 
 int main()
 {
-    // int n;
-    // scanf("%d",&n);
-    char s[51], t[51];
-    scanf("%s %s", s, t);
+    int n;
+    scanf("%d", &n);
 
-    int sLen = strlen(s);
-    int tLen = strlen(t);
-
-    if (sLen >= tLen)
+    for (int i = 0; i < n; i++)
     {
-        // jodi s size besi hoi.
-        for (int i = 0; s[i] != '\0'; i++)
+        char s[51], t[51];
+        scanf("%s %s", s, t);
+
+        int sLen = strlen(s);
+        int tLen = strlen(t);
+
+        if (sLen >= tLen)
         {
-            if (t[i] != '\0')
+            // jodi s size besi hoi.
+            for (int i = 0; s[i] != '\0'; i++)
             {
-                printf("%c%c", s[i], t[i]);
-            }
-            else
-            {
-                printf("%c", s[i]);
+                if (t[i] != '\0')
+                {
+                    printf("%c%c", s[i], t[i]);
+                }
+                else
+                {
+                    printf("%c", s[i]);
+                }
             }
         }
-    }
-    else
-    {
-        // t len jodi bodo hoi tahole eita hobe.
-        for (int i = 0; t[i] != '\0'; i++)
+        else
         {
-            if (s[i] != '\0')
+            // t len jodi bodo hoi tahole eita hobe.
+            for (int i = 0; t[i] != '\0'; i++)
             {
-                printf("%c%c", s[i], t[i]);
-            }
-            else
-            {
-                printf("%c", t[i]);
+                if (s[i] != '\0')
+                {
+                    printf("%c%c", s[i], t[i]);
+                }
+                else
+                {
+                    printf("%c", t[i]);
+                }
             }
         }
+        printf("\n");
     }
 
     return 0;
 }
+
+/*
+https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/K
+
+*/
