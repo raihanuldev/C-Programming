@@ -19,7 +19,7 @@ int main()
             // jodi s size besi hoi.
             for (int i = 0; s[i] != '\0'; i++)
             {
-                if (t[i] != '\0')
+                if (i<tLen)
                 {
                     printf("%c%c", s[i], t[i]);
                 }
@@ -34,7 +34,7 @@ int main()
             // t len jodi bodo hoi tahole eita hobe.
             for (int i = 0; t[i] != '\0'; i++)
             {
-                if (s[i] != '\0')
+                if (i<sLen)
                 {
                     printf("%c%c", s[i], t[i]);
                 }
