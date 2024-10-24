@@ -11,7 +11,6 @@ int main(){
     for(int i =0; i<len; i++){
         if(s[i]==animee[focus]){
             focus++;
-            // i = i;
         }
 
     }
