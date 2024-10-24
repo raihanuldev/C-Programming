@@ -13,17 +13,18 @@ int main()
         scanf("%d", &books[i]);
     }
     int count = 0;
-     int sum = 1;
-    for (int i = 0; i < n; i++)
-    {
-        
-        sum += books[i];
-        // printf("%d\n",sum);
-        count++;
-        if(sum==t){
-            printf("%d",count);
-            break;
+    int sum = 0;
+
+    for (int i = 0; i < n; i++) {
+
+        if (sum + books[i] <= t) {
+            sum += books[i];
+            count++;
+        } else {
+            break;  
         }
     }
+
+    printf("%d\n", count);
     return 0;
 }
