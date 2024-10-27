@@ -3,13 +3,13 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int a[1000] = {0};
+    int a[n + 5];
 
     for(int i = 0; i< n; i++){
         scanf("%d",&a[i]);
     }
     // 
-    int b[100000];
+    int b[100000] = {0};
     for(int i = 0; i<n; i++){
         b[a[i]] =1;
     }
