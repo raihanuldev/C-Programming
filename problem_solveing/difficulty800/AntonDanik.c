@@ -5,6 +5,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
+    getchar();
     char str[100001];
     int antikCount = 0;
     int danikCount = 0;
