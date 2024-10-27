@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "limits": "c"
+        "limits": "c",
+        "PRACTICE.C": "cpp"
     }
 }
