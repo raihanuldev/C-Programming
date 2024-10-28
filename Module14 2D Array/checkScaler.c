@@ -21,10 +21,8 @@ int main()
     {
         for (int j = 0; j < n; j++)
         {
-            if (i == j)
-            {
-                if (a[i][j] != element)
-                {
+            if(i ==j){
+                if(a[i][j] != element){
                     flag = 0;
                     break;
                 }
