@@ -11,7 +11,9 @@ int main(){
             scanf("%d",&a[i][j]);
         }
     }
-
+    // update something
+    a[2][2] = 400;
+    a[3][3] = 500;
      for(int i =0; i<n; i++){
 
         for(int j =0; j<m; j++){
