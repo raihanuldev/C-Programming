@@ -13,4 +13,4 @@ int main(){
     return 0;
 }
 
-// 2D Array Init.
+// 2D Array Init.& access
