@@ -14,7 +14,7 @@ int main()
             frequency[a[i][j]]++;
         }
     }
-
+    
     for (int i = 0; i < x; i++)
     {
         int query;
