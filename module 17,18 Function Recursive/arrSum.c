@@ -2,12 +2,12 @@
 
 int a[10000],sum;
 
-void goToIndex(int x,int n){
-    if(x==n){
-        return;
+int getSum(int i,int n){
+    if(i==n){
+        return 0;
     }
-    sum +=a[x];
-    goToIndex(x+1,n);
+    return a[i]+ getSum(i + 1,n);
+   
 }
 
 
@@ -18,7 +18,6 @@ int main(){
         scanf("%d",&a[i]);
     }
 
-    sum =0;
-    goToIndex(0,n);
-    printf("%d\n",sum);
+    int ret= getSum(0,n);
+    printf("%d\n",ret);
 }
