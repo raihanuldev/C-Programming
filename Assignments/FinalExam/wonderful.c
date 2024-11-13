@@ -1,31 +1,36 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-void isPailndrome(int num){
-    int binary[32],index =0;
+bool isPalindrome(int num) {
+    int binary[32], index = 0;
 
-    while(num>0){
-        binary[index++]=num%2;
-        num/=2;
+    // Convert the number to binary and store it in an array
+    while (num > 0) {
+        binary[index++] = num % 2;
+        num /= 2;
     }
-    for(int i =0; i<index/2; i++){
-        if(binary[i]!= binary[index-i -1]){
-            printf("NO");
-            break;
+
+    // Check if the binary representation is a palindrome
+    for (int i = 0; i < index / 2; i++) {
+        if (binary[i] != binary[index - i - 1]) {
+            return false;
         }
     }
-    printf("YES");
+    return true;
 }
 
-void isWonderful(int num){
-    if(num%2!=0){
-        isPailndrome(num);
-    }else{
-        printf("NO");
+// Function to check if the number is wonderful
+void isWonderful(int num) {
+    if (num % 2 != 0 && isPalindrome(num)) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
     }
 }
 
-int main(){
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     isWonderful(n);
+    return 0;
 }

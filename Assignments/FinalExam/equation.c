@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-
+// Custom function to calculate X raised to the power of an exponent
 int power(int base, int exponent) {
     int result = 1;
     for (int i = 0; i < exponent; i++) {
@@ -10,18 +9,23 @@ int power(int base, int exponent) {
     return result;
 }
 
+// Function to calculate the required sum
+int calculateSum(int X, int N) {
+    int sum = power(X, 0) - 1; // Initialize with X^0 - 1
 
-void equation(int x, int n) {
-    int sum = 0;
-    for (int i = 0; i <= n; i += 2) {
-        sum += power(x, i);
+    // Add terms for each even exponent from 2 up to N
+    for (int i = 2; i <= N; i += 2) {
+        sum += power(X, i);
     }
-    printf("%d\n", sum);
+    return sum;
 }
 
 int main() {
-    int x, n;
-    scanf("%d %d", &x, &n); 
-    equation(x, n);    
+    int X, N;
+    scanf("%d %d", &X, &N);
+
+    int result = calculateSum(X, N);
+    printf("%d\n", result);
+
     return 0;
 }
